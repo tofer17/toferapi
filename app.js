@@ -15,7 +15,7 @@ app.use( express.json() );
 
 /* Services below please */
 
-
+app.use( "/api/h4x0rzRu5", require( "./services/h4x0rzRu5" ) );
 
 /* Thanks. */
 app.use( "/api", require( "./services" ) );
