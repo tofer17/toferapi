@@ -14,9 +14,11 @@ app.use( cors() );
 app.use( express.json() );
 
 /* Services below please */
+
+
+
+/* Thanks. */
 app.use( "/api", require( "./services" ) );
-
-
 
 app.use( ( req, res ) => {
 	res.status( 404 ).json( { success: false, url: req.url, message: "404 not found", } );
